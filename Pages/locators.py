@@ -8,6 +8,7 @@ class BasePageLocators:
 
 class MainPageLocators:
     LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
+    BASKET_BUTTON = (By.CSS_SELECTOR, '.btn-group a.btn.btn-default')
 
 
 class LoginPageLocators:
@@ -22,3 +23,8 @@ class ProductPageLocators:
     TOTAL_BASKET_PRICE_MESSAGE = (By.CSS_SELECTOR, '.alertinner > p:nth-child(1)')
     PRODUCT_NAME = (By.CSS_SELECTOR, '.product_main h1')
     PRODUCT_NAME_IN_ADDED_MESSAGE = (By.CSS_SELECTOR, '.alertinner strong:nth-child(1)')
+
+
+class BasketPageLocators:
+    BASKET_FORMSET = (By.ID, 'basket_formset')
+    EMPTY_BASKET_MESSAGE = (By.CSS_SELECTOR, '#content_inner > p')
